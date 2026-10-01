@@ -1475,6 +1475,25 @@ export const fixtures: Fixture = {
           signature:
             'AkcwRAIgZRfIY3p7/DoVTty6YZbWS71bc5Vct9p9Fia83eRmw2QCICK/ENGfwLtptFluMGs2KsqoNSk89pO7F29zJLUx9a/sASECx/EgAxlkQpQ9hYjgGu6EBCPMVPwVIVJqO4XCsMvViHI='
         },
+        // Nested SegWit (bip49) from the same key,
+        // 37qyp7jQAzqb2rCBpMvVtLDuuzKAUCVnJb. Not in the official vectors;
+        // verified with bip322-js:
+        {
+          wif: 'L3VFeEujGtevx9w18HD1fhRbCH67Az2dpCymeRE1SoPK6XQtaN2k',
+          message: '',
+          format: 'bip49',
+          signatureFormat: 'bip322',
+          signature:
+            'AkcwRAIgWlv2eXF/W6RbkUG+IGtB6Mjpl4LFMkONYTBwwWWY/4gCIHTwq+Iw1ymi5SvIMnuGY1gZk4LKPa/NCsgAexMTr62XASECx/EgAxlkQpQ9hYjgGu6EBCPMVPwVIVJqO4XCsMvViHI='
+        },
+        {
+          wif: 'L3VFeEujGtevx9w18HD1fhRbCH67Az2dpCymeRE1SoPK6XQtaN2k',
+          message: 'Hello World',
+          format: 'bip49',
+          signatureFormat: 'bip322',
+          signature:
+            'AkcwRAIgRfq2Gfv9guFcXAf2vQEJSHX8FP5OuiHs1DSK1I0wk/0CIGPzqm6QNPTDJuki148OQ2DbJtXyrr71s4xYPwogQUupASECx/EgAxlkQpQ9hYjgGu6EBCPMVPwVIVJqO4XCsMvViHI='
+        },
         // Legacy addresses have no BIP-322 simple form and fall back to the
         // legacy message format:
         {
